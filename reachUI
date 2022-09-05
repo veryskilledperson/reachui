@@ -1,0 +1,27 @@
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/veryskilledperson/veryskilledperson/main/2reach'),true))()--reach 2
+
+local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/modern"))()
+--[[
+Functions:
+Lib:Tab(name)
+Tab:Button(text, func)
+Tab:DropDown(text, drops, func)
+Tab:Label(name, text)
+Tab:TextBox(text, func)
+Tab:Toggle(text, func)
+]]--
+local ExampleTab = Lib:Tab("Reach & AutoClicker")
+ExampleTab:Button("Autoclicker", function(text)
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/veryskilledperson/master/main/AutoGui'),true))()--option auutoclickers
+end)
+ExampleTab:Toggle("Reach", function(state)
+if state then
+PrintToggle = true
+while PrintToggle do
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/veryskilledperson/mainreach/main/Reach'),true))()--reach main
+wait()
+end
+else
+PrintToggle = false
+end
+end)
